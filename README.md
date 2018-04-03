@@ -18,10 +18,10 @@ Crawling command example:
 ## Use
 ```
 	python amazon_crawler.py -d it B00WPW3CQ0 -o reviews
-	
+
 	Use help to see all the options
-	<pre>
-	> python amazon_crawler.py -h
+
+		python amazon_crawler.py -h
 	usage: amazon_crawler.py [-h] [-d DOMAIN] [-f] [-r MAXRETRIES] [-t TIMEOUT]
 		                 [-p PAUSE] [-m MAXREVIEWS] [-o OUT] [-c]
 		                 ID [ID ...]
@@ -47,15 +47,13 @@ Crawling command example:
 	  -o OUT, --out OUT     Output base path. Default: amazonreviews
 	  -c, --captcha         Retry on captcha pages until captcha is not asked.
 		                Default: skip
-	</pre>
 	Once downloaded, the reviews can be extracted to a CSV file with the command:
-	<pre>
+
 	python amazon_parser.py -d reviews -o reviews.csv
-	</pre>
 
 	Use help to see all the options
-	<pre>
-	> python amazon_parser.py -h
+
+	python amazon_parser.py -h
 	usage: amazon_parser.py [-h] -d DIR -o OUTFILE
 
 	Amazon review parser
@@ -65,7 +63,6 @@ Crawling command example:
 	  -d DIR, --dir DIR     Directory with the data for parsing
 	  -o OUTFILE, --outfile OUTFILE
 		                Output file path for saving the reviews in csv format
-	</pre>
 
 
 ```
@@ -74,4 +71,4 @@ Crawling command example:
   -[Analin Flores] (https://twitter.com/@any28flo)
 
 ##Licence
-  [MIT] (https://opensource.org/licenses/MIT)
+  -[MIT] (https://opensource.org/licenses/MIT)

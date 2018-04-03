@@ -35,7 +35,7 @@ from time import sleep
 import re
 
 
-def download_page(url,  maxretries, timeout, pause):
+def download_page(url, maxretries, timeout, pause):
     tries = 0
     htmlpage = None
     while tries < maxretries and htmlpage is None:
